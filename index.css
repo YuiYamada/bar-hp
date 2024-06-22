@@ -25,7 +25,7 @@ body {
 	h1 {
 		color: var(--orange);
 		word-break: keep-all;
-		font-size: 1.5vw;
+		font-size: 1.5vh;
 		margin-top: 0;
 
 		span {
@@ -43,7 +43,7 @@ body {
 		align-items: center;
 		place-items: center;
 		grid-template-columns: 0.5fr 0.5fr;
-		font-size: 1vw;
+		font-size: 1vh;
 	}
 }
 
@@ -101,17 +101,23 @@ body {
 		object-fit: cover;
 		border-radius: 1em;
 	}
+
+	@media (max-width: 767px) {
+		img {
+			aspect-ratio: 1 / 1;
+		}
+	}
 }
 
 /* concept */
 .concept {
 	text-align: center;
-	padding-top: 7vw;
+	padding-top: 18vw;
 	margin-bottom: 2vw;
 
 	h2 {
 		color: var(--orange);
-		font-size: 2vw;
+		font-size: 2vh;
 		text-decoration: solid underline var(--white) 2px;
 		text-underline-offset: 0.2em;
 	}
@@ -120,19 +126,23 @@ body {
 		font-size: 1vw;
 		color: var(--white);
 	}
+
+	@media (max-width: 767px) {
+		padding-top: 55vw;
+	}
 }
 
 /* news */
 .news {
 	text-align: center;
-	height: 20vw;
+	height: 20vh;
 	border-radius: 1em;
 	background-color: var(--white);
 
 	h2 {
 		padding-top: 0.5em;
 		color: var(--bg-color);
-		font-size: 2vw;
+		font-size: 2vh;
 		text-decoration: solid underline var(--bg-color) 2px;
 		text-underline-offset: 0.2em;
 	}
@@ -147,7 +157,7 @@ body {
 
 		h3 {
 			text-align: left;
-			font-size: 1vw;
+			font-size: 1vh;
 		}
 	}
 }
@@ -155,11 +165,11 @@ body {
 /* menu */
 .menu {
 	text-align: center;
-	margin-bottom: 2vw;
+	margin-bottom: 2vh;
 
 	h2 {
 		color: var(--orange);
-		font-size: 2vw;
+		font-size: 2vh;
 		text-decoration: solid underline var(--white) 2px;
 		text-underline-offset: 0.2em;
 	}
@@ -187,14 +197,14 @@ body {
 .access {
 	text-align: center;
 	align-items: center;
-	height: 40vw;
+	height: 40vh;
 	border-radius: 1em;
 	background-color: var(--white);
 
 	h2 {
 		padding-top: 0.5em;
 		color: var(--bg-color);
-		font-size: 2vw;
+		font-size: 2vh;
 		text-decoration: solid underline var(--bg-color) 2px;
 		text-underline-offset: 0.2em;
 	}
@@ -220,7 +230,7 @@ body {
 
 	h2 {
 		color: var(--orange);
-		font-size: 2vw;
+		font-size: 2vh;
 		text-decoration: solid underline var(--white) 2px;
 		text-underline-offset: 0.2em;
 	}
@@ -230,7 +240,7 @@ body {
 	}
 
 	.detail-low {
-		width: 50%;
+		width: 80%;
 		text-align: left;
 		display: grid;
 		grid-template-columns: 0.5fr 1fr;
@@ -245,4 +255,5 @@ footer p {
 	margin-top: 3vw;
 	text-align: center;
 	color: var(--white);
+	font-size: 0.5em;
 }
